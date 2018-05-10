@@ -1,0 +1,290 @@
+/* My own css code */
+
+/* header */
+.header {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+/* top nav bar */
+
+.topnav{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index:1; /*keeps navbar on top of content*/
+  overflow: hidden;
+	display: block;
+  background-color: #000000;
+  border-right: 1px solid #555;
+}
+
+/* styling within nav bar*/
+.topnav a {
+  position: sticky;
+  display: inline;
+  color: #00FFFF;
+  text-align: center;
+  margin: 0;
+  padding: 100px;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+/*change color while hovering over nav*/
+.topnav a:hover {
+  background-color: #00FFFF;
+	color: #000000;
+}
+
+/*active nav different color*/
+.topnav a.active {
+  background-color: #00FFFF;
+  color: #000000;
+}
+
+#about {
+  position: relative;
+  width: 100%;
+  max-width: 65%;
+  margin: 1 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#skills {
+  position: relative;
+  width: 100%;
+  max-width: 65%;
+  margin: 1 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+/* Contain overflow in all browsers and sets font - this is for my displayed code section */
+pre {
+ overflow: auto;
+}
+code,
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skillbars {
+    width: 100%;
+    max-width: 65%;
+    background-color: #ddd;
+}
+
+.bars {
+    text-align: right;
+    padding-right: 20px;
+    line-height: 40px;
+    color: #000000;
+}
+
+.bar1 {width: 95%; background-color: #00FFFF;}
+.bar2 {width: 85%; background-color: #00FFFF;}
+.bar3 {width: 75%; background-color: #00FFFF;}
+.bar4 {width: 66%; background-color: #00FFFF;}
+
+#experience {
+  position: relative;
+  width: 100%;
+  max-width: 65%;
+  margin: 1 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#education {
+  position: relative;
+  width: 100%;
+  max-width: 65%;
+  margin: 1 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+#contact {
+  position: relative;
+  width: 100%;
+  max-width: 65%;
+  margin: 1 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  float: right;
+  position: sticky;
+  position: -webkit-sticky; /* Safari */
+  height: 100%;
+  top: 0;
+  margin: 0 1.5%;
+  width: 30%;
+}
+
+/* Remove any image borders */
+img {
+ border: 0;
+}
+
+.loader {
+    align: center;
+    border: 24px solid #00FFFF;
+    border-top: 24px solid #000000;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  background-color: #000000;
+  color: white;
+  margin: 1 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+
+/* In the below section is the code from Skeleton that I have edited */
+body {
+  font-size: 1.5em;
+  line-height: 1.5;
+  font-family: sans-serif;
+  color: #000000; }
+/* Remove default margin.*/
+body {
+  margin: 0;
+}
+/* Sets default font to sans-serif and default sixe to 65% */
+html {
+  font-family: sans-serif;
+  font-size: 65%;
+}
+.column,
+.columns {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+}
+/* edited forms */
+textarea {
+  min-height: 65px;
+  padding-top: 6px;
+  padding-bottom: 6px; }
+/* Define consistent border, margin, and padding */
+fieldset {
+  border: 1px solid #000000;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: 600; }
+fieldset {
+  padding: 0;
+  border-width: 0; }
+/* edited lists */
+ul {
+  list-style: circle inside; }
+ol, ul {
+  padding-left: 0;
+  margin-top: 0; }
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin: 1.5rem 0 1.5rem 3rem;
+  font-size: 90%; }
+li {
+  margin-bottom: 01rem; }
+/* edited Code */
+code {
+  padding: .2rem .5rem;
+  margin: 0 .2rem;
+  background: #F1F1F1;
+  border: 1px solid #000000;
+}
+pre > code {
+  display: block;
+  padding: 1rem 1.5rem;
+  white-space: pre; }
+/* Larger than phablet */
+@media (min-width: 550px) {
+  h1 { font-size: 5.0rem; }
+  h3 { font-size: 3.6rem; }
+  h5 { font-size: 2.4rem; }
+  h6 { font-size: 1.5rem; }
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  font-weight: 300; }
+h1 { font-size: 4.0rem; }
+h3 { font-size: 3.0rem; }
+h5 { font-size: 1.8rem; }
+h6 { font-size: 1.5rem; }
+
+/* Larger than mobile */
+@media (min-width: 400px) {}
+/* Larger than phablet (grid becomes active) */
+@media (min-width: 550px) {}
+/* Larger than tablet */
+@media (min-width: 750px) {}
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+/*Remove default vertical scrollbar in IE 8/9/10/11.*/
+textarea {
+  overflow: auto;
+}
+/* Don't inherit the `font-weight` (applied by a rule above).
+ NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+/* For devices larger than 400px */
+@media (min-width: 400px) {
+  .container {
+    width: 85%;
+    padding: 0; }
+}
+/* For devices larger than 550px */
+@media (min-width: 550px) {
+  .container {
+    width: 80%; }
+  .column,
+  .columns {
+    margin-left: 4%; }
+  .column:first-child,
+  .columns:first-child {
+    margin-left: 0; }
+
+  .twelve.columns                 { width: 100%; margin-left: 0; }
+  .two-thirds.column              { width: 65.3333333333%; }
+  .offset-by-two-thirds.column,
+  .offset-by-two-thirds.columns   { margin-left: 69.3333333333%; }
+}
